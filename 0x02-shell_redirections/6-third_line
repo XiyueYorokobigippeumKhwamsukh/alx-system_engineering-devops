@@ -1,2 +1,2 @@
-#1/bin/bash
-tail -n+3 iacta  | head -1
+#!/bin/bash
+awk 'NR==3{print; exit}' iacta
